@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  web_didactic_octo_paddles:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web_didactic_octo_paddles
+    ports:
+      - "1337:1337"
+    restart: unless-stopped
